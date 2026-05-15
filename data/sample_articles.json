@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "title": "5G Towers Proven to Cause DNA Damage in Independent Lab Tests",
+    "content": "Scientists working in an unlicensed independent laboratory in rural Montana claim to have discovered definitive proof that 5G cellular towers emit radiation capable of altering human DNA. The research, which has not undergone peer review and is not published in any academic journal, reportedly involved exposing mice to simulated 5G radiation for six hours. The lead researcher, who holds a degree in electrical engineering rather than biology, stated that tumour growth was observed in every test subject. Major telecommunications companies have suppressed this research, according to the scientists. They urge citizens to wrap their routers in aluminium foil and avoid using smartphones after 9 PM. Medical authorities have not been contacted. The World Health Organization has previously classified RF radiation from mobile devices as possibly carcinogenic in 2011, a classification that applies to all radio-frequency sources including AM radio and coffee, but the researchers claim their findings go much further. No raw data has been shared publicly.",
+    "true_label": "FAKE",
+    "source": "HealthTruthNow.net",
+    "topic": "health_misinformation"
+  },
+  {
+    "id": 2,
+    "title": "Government Secretly Adds Mind-Altering Chemicals to Municipal Water Supply",
+    "content": "A whistleblower from within the Environmental Protection Agency has allegedly leaked documents proving that the federal government has been adding lithium compounds to drinking water across 47 major US cities since 2009. The documents, which have not been verified by any independent journalist or forensic document analyst, claim that the programme was designed to reduce civil unrest by lowering aggression levels in the general population. The whistleblower, whose identity has been kept anonymous and whose credentials have not been confirmed, says that the chemicals are added at night using unmarked vehicles. Water treatment professionals who were contacted declined to comment. Investigative journalists at three major outlets stated they could find no evidence supporting these claims. The article urges readers to install reverse osmosis filters immediately and to stop voting for incumbents. It has been shared over two million times on social media. Local water utility boards have denied all allegations.",
+    "true_label": "FAKE",
+    "source": "ConspiracyRealityCheck.org",
+    "topic": "political_conspiracy"
+  },
+  {
+    "id": 3,
+    "title": "Eating Celery Cures Type 2 Diabetes in 72 Hours, Doctors Confirm",
+    "content": "A viral post circulating across multiple social media platforms claims that consuming two stalks of raw celery before each meal can reverse Type 2 diabetes within three days. The claim cites a study from a fictional institution called the Global Institute for Natural Medicine in Geneva, which does not appear in any academic registry. Multiple endocrinologists contacted by fact-checking organisations confirmed that no such institution exists and that no food has been clinically proven to reverse Type 2 diabetes in 72 hours. Type 2 diabetes management typically involves lifestyle modifications, medication, and long-term dietary changes monitored by medical professionals. The American Diabetes Association issued a statement warning patients against abandoning prescribed treatments based on social media health claims. The original post was created by an account that also sells herbal supplement kits priced at $89 per month. Celery does contain fibre and water, which are generally beneficial to health, but these properties do not constitute a cure for any metabolic disorder.",
+    "true_label": "FAKE",
+    "source": "NaturalCuresDaily.com",
+    "topic": "health_misinformation"
+  },
+  {
+    "id": 4,
+    "title": "President Signs Secret Executive Order Banning Cash Transactions Over $50",
+    "content": "An unverified document circulating on Telegram channels purports to be an executive order that would make it illegal for any US citizen to conduct cash transactions exceeding $50 starting from January next year. The document does not appear in the Federal Register, which is the legally required publication for all executive orders in the United States. The White House press office issued a denial, calling the document fabricated. Constitutional law experts noted that such a policy would require congressional legislation, not an executive order, making the premise legally implausible. The document contains several formatting errors inconsistent with official White House publications and includes an incorrect seal. Financial regulators stated that no such regulatory change was under consideration. Despite this, the story was retweeted over 800,000 times and prompted several bank branches to report unusual customer withdrawals driven by public panic about impending cash restrictions.",
+    "true_label": "FAKE",
+    "source": "FreeSpeechWire.net",
+    "topic": "political"
+  },
+  {
+    "id": 5,
+    "title": "NASA Confirms Moon is Actually a Hollow Artificial Structure from 1962 Memo",
+    "content": "A blog post claiming to have uncovered a declassified NASA memorandum from 1962 alleges that early Apollo programme scientists confirmed the Moon is a hollow artificial satellite constructed by an unknown civilisation. The supposed memo, images of which have been widely shared, contains anachronistic digital formatting inconsistent with documents from that era and uses terminology that did not exist in scientific literature until the 1990s. NASA archives, which are publicly accessible, contain no such document. Astronomers note that seismic data collected by Apollo missions shows the Moon does have a partially molten core and behaves geologically like other rocky bodies in the solar system. The Hollow Moon hypothesis has been thoroughly examined and dismissed in peer-reviewed planetary science literature. The blog that published the story has no named authors and redirects to a cryptocurrency investment page. It is currently the third most shared science story on Reddit despite widespread expert debunking.",
+    "true_label": "FAKE",
+    "source": "CosmicTruthReveal.blogspot.com",
+    "topic": "science_hoax"
+  },
+  {
+    "id": 6,
+    "title": "Popular Vaccine Ingredient Found to Contain Trackable Nano-Microchips",
+    "content": "A video spreading rapidly across Facebook and YouTube claims that a standard ingredient used in several approved vaccines contains microscopic chips that allow governments to track vaccinated individuals via satellite. The video shows what it describes as magnified vaccine contents under a microscope, though the footage appears to be of common household substances including corn starch and soap film. Electrical engineers pointed out that a functional tracking device requires an antenna, power source, and processor — none of which are manufacturable at the nanoscale with current technology. The ingredients listed on the FDA-approved vaccine packaging are publicly disclosed and independently audited. Regulatory toxicologists reviewed the viral footage and confirmed it bears no resemblance to any pharmaceutical product. The video was originally uploaded by an account later identified as part of a foreign disinformation network. Fact-checking organisations including Snopes, PolitiFact, and Reuters have rated the claim as false.",
+    "true_label": "FAKE",
+    "source": "VaccineAlert2024.com",
+    "topic": "health_misinformation"
+  },
+  {
+    "id": 7,
+    "title": "Global Average Temperatures in 2023 Were Hottest on Record, Scientists Confirm",
+    "content": "The year 2023 was the warmest on record globally, surpassing the previous record set in 2016, according to analyses released by NASA, NOAA, and the European Copernicus Climate Change Service. The global mean surface temperature was approximately 1.45 degrees Celsius above the pre-industrial baseline, edging closer to the 1.5 degree threshold outlined in the Paris Agreement. Scientists attributed the record heat to a combination of long-term anthropogenic climate change driven by greenhouse gas emissions and the emergence of a strong El Niño weather pattern in the second half of the year. Sea surface temperatures also hit unprecedented highs, contributing to record low Antarctic sea ice extent. The data was independently verified by multiple research institutions across twelve countries. Climate scientists noted that 20 of the 21 warmest years on record have occurred since 2000, a trend consistent with the physics of radiative forcing from accumulated atmospheric CO2.",
+    "true_label": "REAL",
+    "source": "ScienceDaily",
+    "topic": "climate"
+  },
+  {
+    "id": 8,
+    "title": "OpenAI Releases GPT-4 Technical Report Detailing Model Architecture and Safety Evaluations",
+    "content": "OpenAI published a technical report on GPT-4, its latest large language model, detailing the evaluation framework used to assess its capabilities and limitations. The report describes a range of benchmark tests across academic examinations, professional licensing tests, and custom reasoning tasks. GPT-4 achieved scores in the top 10 percent on a simulated bar exam and showed meaningful improvements over GPT-3.5 on most standardised assessments. The technical report was notable for its transparency regarding the model's failure modes, including its tendency to produce plausible-sounding but factually incorrect statements, a behaviour the company describes as hallucination. The document also outlines red-teaming efforts involving external safety researchers who attempted to elicit harmful outputs. OpenAI stated it withheld certain architectural details from the report due to the competitive environment and safety considerations around model replication. The full report is available on the OpenAI website and has been reviewed by researchers at multiple academic institutions.",
+    "true_label": "REAL",
+    "source": "TechCrunch",
+    "topic": "technology"
+  },
+  {
+    "id": 9,
+    "title": "US Federal Reserve Raises Interest Rates by 25 Basis Points Amid Inflation Concerns",
+    "content": "The United States Federal Reserve raised its benchmark federal funds rate by 25 basis points at its most recent Federal Open Market Committee meeting, bringing the target range to its highest level in over two decades. Fed Chair Jerome Powell stated at the post-meeting press conference that while inflation had moderated from its peak, it remained above the central bank's 2 percent target and that the committee would remain data-dependent in future decisions. Core personal consumption expenditures inflation, the Fed's preferred measure, had declined but continued to run above target. Treasury yields rose following the announcement while equity markets showed mixed reactions. Economists surveyed by Reuters had broadly anticipated the rate increase, though views on whether additional hikes would be necessary were divided. The Fed's decision was unanimous among voting committee members. Mortgage rates, which are sensitive to expectations of Fed policy, increased modestly in the week following the announcement.",
+    "true_label": "REAL",
+    "source": "Reuters",
+    "topic": "economy"
+  },
+  {
+    "id": 10,
+    "title": "CRISPR Gene Editing Used to Treat Sickle Cell Disease in Clinical Trial",
+    "content": "Researchers at a clinical trial site in the United States reported that patients with sickle cell disease treated with a CRISPR-based gene therapy showed sustained remission from disease symptoms for over 18 months following a single treatment. The therapy, developed jointly by Vertex Pharmaceuticals and CRISPR Therapeutics, works by reactivating foetal haemoglobin production, which compensates for the defective adult haemoglobin responsible for sickle cell symptoms. Results from the first 45 patients enrolled in the trial showed that the majority had no vaso-occlusive crises, the painful and potentially life-threatening episodes that characterise the disease, after treatment. The findings were published in the New England Journal of Medicine following peer review. The treatment received breakthrough therapy designation from the FDA, which expedites its review process. Scientists not involved in the study described the results as a significant milestone for gene therapy, while noting that manufacturing complexity and cost could limit access in lower-income populations.",
+    "true_label": "REAL",
+    "source": "New England Journal of Medicine",
+    "topic": "health_science"
+  },
+  {
+    "id": 11,
+    "title": "India's UPI Payment System Processes Record 10 Billion Transactions in Single Month",
+    "content": "India's Unified Payments Interface, the government-backed real-time payment network operated by the National Payments Corporation of India, processed more than 10 billion transactions in a single calendar month for the first time, according to data released by NPCI. The milestone represents a transaction value of approximately 15 trillion Indian rupees and reflects the continued expansion of digital payments in the country following the government's demonetisation policy and sustained investment in digital infrastructure. UPI enables instant money transfers between bank accounts using smartphones and has been adopted by over 300 million unique users. The platform is interoperable across banks and third-party apps including PhonePe, Google Pay, and Paytm. NPCI stated that merchant payments now represent a growing share of transactions, indicating broader adoption beyond peer-to-peer transfers. Several countries in Southeast Asia and the Middle East have begun implementing UPI-compatible payment corridors following bilateral agreements with India.",
+    "true_label": "REAL",
+    "source": "Economic Times",
+    "topic": "economy"
+  },
+  {
+    "id": 12,
+    "title": "Arctic Sea Ice Extent Reaches Second Lowest September Minimum Since Records Began",
+    "content": "Arctic sea ice coverage reached its annual minimum extent in September at 4.23 million square kilometres, the second lowest figure recorded since satellite observations began in 1979, according to the National Snow and Ice Data Center. Scientists attributed the decline to a combination of long-term warming trends in the Arctic, which is heating at roughly four times the global average rate, and regional weather patterns that brought above-average temperatures to the Siberian coast throughout the summer. Multi-year ice, which is older and thicker and more resilient to seasonal melting, continued its long-term decline and now accounts for a significantly smaller fraction of total Arctic ice cover than it did in the 1980s. The loss of sea ice affects global weather patterns by altering the jet stream and has consequences for Arctic ecosystems, including polar bears, walruses, and the communities that depend on them. Researchers noted that the five lowest Arctic sea ice extents on record have all occurred within the past decade.",
+    "true_label": "REAL",
+    "source": "National Snow and Ice Data Center",
+    "topic": "climate"
+  }
+]

@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Local Streamlit/runtime files
+.streamlit/secrets.toml
+streamlit-server.log
+streamlit-server.pid
+*.log
+*.pid
+
+# Generated reports and working artifacts
+outputs/
+report_work/
+*.docx
+*.pdf
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

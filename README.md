@@ -90,6 +90,14 @@ Some sites block automated fetching, render text only after JavaScript, or hide
 article images behind lazy-loading scripts. In those cases, use the manual
 paste/upload tab as the fallback.
 
+### Troubleshooting blocked URLs
+
+If a source returns `HTTP 401` or `HTTP 403`, the website is refusing automated
+fetching. This is common on Reuters and some other commercial news sites. The
+app should not bypass access controls, paywalls, CAPTCHA checks, or bot
+protection. For those articles, open the page normally in your browser, copy the
+article body into the manual tab, and upload the relevant article image yourself.
+
 ## Verdict Thresholds
 
 | Condition | Verdict |

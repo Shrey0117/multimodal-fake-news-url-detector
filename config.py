@@ -29,8 +29,10 @@ MAX_TOKEN_LENGTH = 512
 # Minimum words required in the article body (enforced in preprocessor)
 MIN_WORDS = 20
 
-# Maximum raw characters accepted in the UI
-MAX_CHARS = 5_000
+# Maximum raw characters accepted in the UI. URL extraction often returns full
+# articles, so this version allows longer text before the model applies its
+# 512-token transformer limit.
+MAX_CHARS = 20_000
 
 # ---------------------------------------------------------------------------
 # Verdict thresholds

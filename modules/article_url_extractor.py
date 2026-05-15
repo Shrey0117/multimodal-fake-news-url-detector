@@ -307,16 +307,17 @@ class ArticleURLExtractor:
     def extract_from_html(self, html: str, source_url: str) -> ExtractedArticle:
         parser = _ArticleHTMLParser(source_url)
         parser.feed(html)
+        blocks = parser.blocks or self._fallback_blocks(html)
 
         raw_title = (
-            self._first_h1(parser.blocks)
+            self._first_h1(blocks)
             or parser.meta.get("og:title")
             or parser.meta.get("twitter:title")
             or " ".join(parser.title_chunks)
         )
         title = self._clean_title(raw_title)
 
-        paragraphs = self._dedupe_blocks(parser.blocks, title)
+        paragraphs = self._dedupe_blocks(blocks, title)
         text = "\n\n".join(paragraphs)
 
         images = self._rank_images(parser.images)
@@ -399,7 +400,17 @@ class ArticleURLExtractor:
                     raise ValueError("The URL did not return an HTML article page.")
                 raw = response.read(config.URL_HTML_MAX_BYTES + 1)
                 charset = response.headers.get_content_charset() or "utf-8"
-        except (HTTPError, URLError, TimeoutError) as exc:
+        except HTTPError as exc:
+            if exc.code in {401, 403}:
+                raise ValueError(
+                    "This website blocked automated article fetching "
+                    f"(HTTP {exc.code}). This is common on Reuters and some other "
+                    "major news sites. The app will not bypass access controls; "
+                    "open the article in your browser and use the manual paste/upload "
+                    "tab for that source."
+                ) from exc
+            raise ValueError(f"Could not fetch article URL: HTTP {exc.code} {exc.reason}") from exc
+        except (URLError, TimeoutError) as exc:
             raise ValueError(f"Could not fetch article URL: {exc}") from exc
 
         if len(raw) > config.URL_HTML_MAX_BYTES:
@@ -446,3 +457,32 @@ class ArticleURLExtractor:
             if image.url not in deduped or image.score > deduped[image.url].score:
                 deduped[image.url] = image
         return sorted(deduped.values(), key=lambda item: item.score, reverse=True)
+
+    @staticmethod
+    def _fallback_blocks(html: str) -> List[Tuple[str, str]]:
+        """Fallback for pages whose malformed markup prevents HTMLParser blocks."""
+        cleaned = re.sub(
+            r"<(script|style|noscript|template|svg)\b[^>]*>.*?</\1>",
+            " ",
+            html,
+            flags=re.IGNORECASE | re.DOTALL,
+        )
+        cleaned = re.sub(
+            r"<(aside|footer|form|header|iframe|nav)\b[^>]*>.*?</\1>",
+            " ",
+            cleaned,
+            flags=re.IGNORECASE | re.DOTALL,
+        )
+        blocks: List[Tuple[str, str]] = []
+        for match in re.finditer(
+            r"<(h1|h2|p|li)\b[^>]*>(.*?)</\1>",
+            cleaned,
+            flags=re.IGNORECASE | re.DOTALL,
+        ):
+            tag = match.group(1).lower()
+            inner = re.sub(r"<br\s*/?>", " ", match.group(2), flags=re.IGNORECASE)
+            text = re.sub(r"<[^>]+>", " ", inner)
+            text = re.sub(r"\s+", " ", unescape(text)).strip()
+            if _ArticleHTMLParser._is_useful_block(tag, text):
+                blocks.append((tag, text))
+        return blocks
